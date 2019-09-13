@@ -455,7 +455,7 @@ background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/ba
   left:30%;
     font-size:20px;
     position: relative;
-
+padding-bottom:100px;
  align-items:center;
   align-self: center;
 }
@@ -3875,11 +3875,16 @@ h6 {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+.welcome_area2{
+  padding-top:0px;
+  padding:0px;
+  padding-bottom: 100px;
+
+}
 .welcome_area{
   padding-top:0px;
   padding:0px;
   padding-bottom: 0px;
-
 }
 .welcome_text p {
   margin-bottom: 25px;
@@ -3904,6 +3909,7 @@ h6 {
 ============================================================================================ */
 .team_area {
   background: #f9f9ff;
+ 
 }
 
 .team_inner {
@@ -4321,7 +4327,20 @@ background-image: linear-gradient(to right top, #853900, #a24600, #c05300, #df60
   background: #6247ea;
 }
 
-
+header.masthead-2{text-align:center;color:#fff;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/TrackNewMain.jpeg);
+  background-repeat:no-repeat;background-attachment:scroll;
+  background-position:center center;
+  height:50%;
+  background-size:cover}
+header.masthead-2 .intro-text{padding-top:150px;padding-bottom:100px}
+header.masthead-2 .intro-text .intro-lead-in{font-size:22px;font-style:italic;line-height:22px;margin-bottom:25px;font-family:'Droid Serif',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'}
+header.masthead-2 .intro-text .intro-heading{font-size:50px;font-weight:700;line-height:50px;margin-bottom:25px;font-family:Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'}
+@media (min-width:768px){
+  header.masthead-2 .intro-text{padding-top:300px;padding-bottom:200px}
+header.masthead-2 .intro-text .intro-lead-in{font-size:40px;font-style:italic;line-height:40px;margin-bottom:25px;font-family:'Droid Serif',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'}
+header.masthead-2 .intro-text .intro-heading{font-size:75px;font-weight:700;line-height:75px;margin-bottom:50px;font-family:Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'}}
+.service-heading{margin:15px 0;text-transform:none}
 
 /*---------------------------------------------------- */
 
