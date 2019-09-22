@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -37,86 +37,263 @@
 
 <body id="page-top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html">Lanier Track and Field</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
-              </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="Athletes.html">Athletes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="Coaches.html">Coaches</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="Events.html">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="Gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="Payments.html">Payments</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="Forms.html">Forms</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="Contact.html">Contact</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li> -->
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">Lanier Track and Field</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Athletes.html">Athletes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Coaches.html">Coaches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Payments.html">Payments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Forms.html">Forms</a>
+                    </li>
+                    <!--<li class="nav-item">
+                      <a class="nav-link js-scroll-trigger" href="Contact.html">Contact</a>
+                    </li>-->
+                    <!-- <li class="nav-item">
+                      <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container">
-      <div class="intro-text">
-        <div class="intro-lead-in">Lanier High School</div>
-        <div class="intro-heading text-uppercase">Track and Field</div>
-   
-      </div>
-    </div>
-  </header>
-  <section class="event_time_area">
-    <div class="container">
-        <div class="event_time_inner">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="event_text">
-                        <h3 >Next Meet will Start in</h3>
-                        <p></p>
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Lanier High School</div>
+                <div class="intro-heading text-uppercase">Track and Field</div>
+
+            </div>
+        </div>
+    </header>
+    <section class="event_time_area">
+        <div class="container">
+            <div class="event_time_inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="event_text">
+                            <h3>Next Meet will Start in</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="timer_inner">
+                            <div id="timer" class="timer">
+                                <div class="timer__section days">
+                                    <div class="timer__number"></div>
+                                    <div class="timer__label">days</div>
+                                </div>
+                                <div class="timer__section hours">
+                                    <div class="timer__number"></div>
+                                    <div class="timer__label">hours</div>
+                                </div>
+                                <div class="timer__section minutes">
+                                    <div class="timer__number"></div>
+                                    <div class="timer__label">Minutes</div>
+                                </div>
+                                <div class="timer__section seconds">
+                                    <div class="timer__number"></div>
+                                    <div class="timer__label">seconds</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="timer_inner">
-                        <div id="timer" class="timer">
-                            <div class="timer__section days">
-                                <div class="timer__number"></div>
-                                <div class="timer__label">days</div>
+            </div>
+        </div>
+    </section>
+    <section class="welcome_area pad_btm">
+        <div class="container">
+            <div class="offset-md-1 col-md-12 welcome_inner row">
+
+                <div>
+                    <div class=" trackQuote">
+
+                        <p class="text-center" data-sal-duration="1200"
+                           data-sal="slide-down"
+                           data-sal-delay="10000"
+                           data-sel-easing="ease-out-bounce">
+                            "Life is often compared to a marathon, but I think it is more like being a sprinter;<br>
+                            long stretches of hard work punctuated by brief moments<br> in which we are given the opportunity to perform at our best."
+                        </p><br><br> <footer data-sal-duration="1200"
+                                             data-sal="slide-down"
+                                             data-sal-delay="12000"
+                                             data-sel-easing="ease-out-bounce">
+                            -Michael Johnson
+                        </footer>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services -->
+    <!-- Team -->
+    <section class="team_area p_120" id="">
+        <div class="container">
+            <div class="main_title">
+                <h2 data-sal-duration="1200"
+                    data-sal="slide-down"
+                    data-sal-delay="10000"
+                    data-sel-easing="ease-out-bounce">
+                    Lanier Coaches
+                </h2>
+                <p></p>
+            </div>
+            <div class="row team_inner">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team_item">
+                        <div class="team_img">
+                            <img class="img-fluid" src="img/team/1.jpg" alt="">
+                            <div class="hover">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
                             </div>
-                            <div class="timer__section hours">
-                                <div class="timer__number"></div>
-                                <div class="timer__label">hours</div>
+                        </div>
+                        <div class="team_name">
+                            <h4>Daryl Beard</h4>
+                            <p>Head Coach</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team_item">
+                        <div class="team_img">
+                            <img class="img-fluid" src="img/team/2.jpg" alt="" data-rotate="90">
+                            <div class="hover">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
                             </div>
-                            <div class="timer__section minutes">
-                                <div class="timer__number"></div>
-                                <div class="timer__label">Minutes</div>
+                        </div>
+                        <div class="team_name">
+                            <h4>Coach Bernstein</h4>
+                            <p> Coach</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team_item">
+                        <div class="team_img">
+                            <img class="img-fluid" src="img/team/team-3.jpg" alt="">
+                            <div class="hover">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
                             </div>
-                            <div class="timer__section seconds">
-                                <div class="timer__number"></div>
-                                <div class="timer__label">seconds</div>
+                        </div>
+                        <div class="team_name">
+                            <h4>Coach Jones</h4>
+                            <p>Coach</p>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="col-lg-3 col-sm-6">
+                  <div class="team_item">
+                    <div class="team_img">
+                      <img class="img-fluid" src="img/team/team-4.jpg" alt="">
+                      <div class="hover">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </div>
+                    </div>
+                    <div class="team_name">
+                      <h4>Coach Ferguson</h4>
+                      <p>Coach</p>
+                    </div>
+                  </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Clients -->
+    <!--<section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>-->
+    <!-- Contact -->
+    <!-- <section class="page-section" id="contact">
+
+    </section> -->
+    <!-- Footer -->
+    <!-- Portfolio Modals -->
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times"></i>
+                                    Close Project
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -124,286 +301,104 @@
             </div>
         </div>
     </div>
-</section>
-<section class="welcome_area pad_btm">
-    <div class="container">
-        <div class="offset-md-1 col-md-12 welcome_inner row">
-        
-            <div>
-                <div class=" trackQuote">
-                
-                    <p class="text-center" data-sal-duration="1200"
-                    data-sal="slide-down"
-                    data-sal-delay="10000"
-                    data-sel-easing="ease-out-bounce">"Life is often compared to a marathon, but I think it is more like being a sprinter;<br>
-                         long stretches of hard work punctuated by brief moments<br> in which we are given the opportunity to perform at our best." </p><br><br> <footer
-                         data-sal-duration="1200"
-                         data-sal="slide-down"
-                         data-sal-delay="12000"
-                         data-sel-easing="ease-out-bounce">-Michael Johnson </footer> 
-                    
-                
+
+    <!-- Modal 3 -->
+    <!-- Modal 4 -->
+    <section class="home_map_area" id="">
+
+        <iframe id="mapBox2" class="mapBox2 col-lg-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.359756103879!2d-84.03684478447919!3d34.08592322340125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f596b9dd4ca20f%3A0x51dc6968db93fed0!2sLanier%20High%20School!5e0!3m2!1sen!2sus!4v1566676471618!5m2!1sen!2sus" width="900" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+        <div class="home_details">
+            <div class="container">
+                <div class="box_home_details">
+                    <div class="media">
+                        <div class="d-flex">
+                            <i class="lnr lnr-home"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4>Lanier High School</h4>
+                            <p>918 Buford Hwy, <br/>Sugar Hill, Georgia</p>
+                        </div>
+                    </div>
+                    <div class="media">
+
+                    </div>
+                    <div class="media">
+                        <div class="d-flex">
+                            <i class="lnr lnr-envelope"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4>daryl_beard@gwinnett.k12.ga.us</h4>
+                            <p></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-  <!-- Services -->
-
-
-  <!-- Team -->
-  <section class="team_area p_120" id="">
-    <div class="container">
-      <div class="main_title">
-        <h2 data-sal-duration="1200"
-    data-sal="slide-down"
-    data-sal-delay="10000"
-    data-sel-easing="ease-out-bounce">Lanier Coaches</h2>
-        <p></p>
-      </div>
-      <div class="row team_inner">
-        <div class="col-lg-3 col-sm-6">
-          <div class="team_item">
-            <div class="team_img">
-              <img class="img-fluid" src="img/team/1.jpg" alt="">
-              <div class="hover">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="team_name">
-              <h4>Daryl Beard</h4>
-              <p>Head Coach</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="team_item">
-            <div class="team_img">
-              <img class="img-fluid" src="img/team/2.jpg" alt="" data-rotate="90"
-              >
-              <div class="hover">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="team_name">
-              <h4>Coach Bernstein</h4>
-              <p> Coach</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="team_item">
-            <div class="team_img">
-              <img class="img-fluid" src="img/team/team-3.jpg" alt="">
-              <div class="hover">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="team_name">
-              <h4>Coach Jones</h4>
-              <p>Coach</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="team_item">
-            <div class="team_img">
-              <img class="img-fluid" src="img/team/team-4.jpg" alt="">
-              <div class="hover">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="team_name">
-              <h4>Coach Ferguson</h4>
-              <p>Coach</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Clients -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- Contact -->
-  <!-- <section class="page-section" id="contact">
-   
-  </section> -->
-
-  <!-- Footer -->
-  
-  <!-- Portfolio Modals -->
-
-  <!-- Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 3 -->
- 
-  <!-- Modal 4 -->
-  <section class="home_map_area" id="">
-
-    <iframe id="mapBox2" class="mapBox2 col-lg-12"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.359756103879!2d-84.03684478447919!3d34.08592322340125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f596b9dd4ca20f%3A0x51dc6968db93fed0!2sLanier%20High%20School!5e0!3m2!1sen!2sus!4v1566676471618!5m2!1sen!2sus" width="900" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-  
-       <div class="home_details">
-    <div class="container">
-      <div class="box_home_details">
-        <div class="media">
-          <div class="d-flex">
-            <i class="lnr lnr-home"></i>
-          </div>
-          <div class="media-body">
-            <h4>Lanier High School</h4>
-            <p> Buford, Georgia</p>
-          </div>
-        </div>
-        <div class="media">
-          
-        </div>
-        <div class="media">
-          <div class="d-flex">
-            <i class="lnr lnr-envelope"></i>
-          </div>
-          <div class="media-body">
-            <h4>support@colorlib.com</h4>
-            <p>Send us your query anytime!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-       </div>
     </section>
     <!--================End Event Schedule Area =================-->
-    
     <!--================Price Area =================-->
-   
     <!--================End Price Area =================-->
-    
-    <!--================ start footer Area  =================-->	
-       <footer class="footer-area p_120">
+    <!--================ start footer Area  =================-->
+    <footer class="footer-area p_120">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3  col-md-6 col-sm-6">
                     <div class="single-footer-widget tp_widgets">
-                       <h6 class="footer_title">CREDITS</h6>
+                        <h6 class="footer_title">CREDITS</h6>
                         <ul class="list">
-                          <li>Head Designer: Natasha Setiadi</li>
-                          <li>Lead Developer: Ian Toole</li>
-                          <li>Original Template: Colorlib</li>
-                          <li>Copyright &copy;2019 Mcaw Technologies</li>
+                            <li>Head Designer: Natasha Setiadi</li>
+                            <li>Lead Developer: Ian Toole</li>
+                            <li>Original Template: Colorlib</li>
+                            <li>Copyright &copy;2019 Mcaw Technologies</li>
                         </ul>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-footer-widget news_widgets">
                         <h6 class="footer_title">Webpages</h6>
                         <ul class="list">
-                        <li><a href="Athletes.html">Athletes</a></li>
-                        <li><a href="Coaches.html">Coaches</a></li>		
-                        <li><a href="Gallery.html">Gallery</a></li>
-                               <li><a href="Events.html">Events</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
+                            <li><a href="Athletes.html">Athletes</a></li>
+                            <li><a href="Coaches.html">Coaches</a></li>
+                            <li><a href="Gallery.html">Gallery</a></li>
+                            <li><a href="Events.html">Events</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
                         </ul>
-                      
+
                     </div>
                 </div>
-                
+
             </div>
-           
+
         </div>
     </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/stellar.js"></script>
-  <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-  <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-  <script src="vendors/isotope/isotope-min.js"></script>
-  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-  <script src="js/jquery.ajaxchimp.min.js"></script>
-  <script src="vendors/flipclock/timer.js"></script>
-  <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-  <script src="vendors/counter-up/jquery.counterup.js"></script>
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="vendors/flipclock/timer.js"></script>
+    <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendors/counter-up/jquery.counterup.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/agency.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
 
 </body>
 
